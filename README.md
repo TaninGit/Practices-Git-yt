@@ -1,1 +1,1 @@
-Hello Sir this is Git Practices
+# Github Practices เรียนรู้ Github เบื้องต้น
