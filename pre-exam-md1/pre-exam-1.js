@@ -164,3 +164,6 @@ console.log(`Before_size:  ${arr7.length}`)
 let arr7_result = delete_index(arr7,5)
 console.log(`After:  ${arr7_result}`)
 console.log(`After_size:  ${arr7_result.length}`)
+
+const [a,b,c,d] = [1,2,3,4]
+console.log(c)
