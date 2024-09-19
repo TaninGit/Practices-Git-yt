@@ -69,3 +69,9 @@ console.log(x.id) // 102
 console.log(x.price) // 250
 console.log(x.stock) // 23
 console.log(x.__proto__) // Product { id: 102, price: 250, stock: 23 }
+
+x.id = 'x0001'
+console.log(x)
+
+console.log(Product.prototype.isPrototypeOf(p1)) // เป็น Method ที่เช็คว่าตัวที่อยู่ใน (p1) มันสืบทอด Product มั้ย  output:true 
+console.log(Product.prototype.isPrototypeOf(x)) //true
