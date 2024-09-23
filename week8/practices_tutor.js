@@ -14,24 +14,24 @@ function switchItUp(number) {
   };
   return storage[number];
 }
-console.log(switchItUp(0));
-console.log(switchItUp(1));
-console.log(switchItUp(2));
-console.log(switchItUp(3));
-console.log(switchItUp(4));
-console.log(switchItUp(5));
-console.log(switchItUp(6));
-console.log(switchItUp(7));
-console.log(switchItUp(8));
-console.log(switchItUp(9));
+console.log(switchItUp(0)); //Zero
+console.log(switchItUp(1)); //One
+console.log(switchItUp(2)); //Two
+console.log(switchItUp(3)); //Three
+console.log(switchItUp(4)); //Four
+console.log(switchItUp(5)); //Five
+console.log(switchItUp(6)); //Six
+console.log(switchItUp(7)); //Seven
+console.log(switchItUp(8)); //Eight
+console.log(switchItUp(9)); //Nine
 
 const name = 'Tanin';
 const greeting0 = (name) => 'Hello ' + name;
 const greeting2 = (name) => 'Hello ' + name;
 const greeting1 = (name) => `Hello ${name}`;
-console.log(greeting0(name));
-console.log(greeting1(name));
-console.log(greeting2(name));
+console.log(greeting0(name)); //Hello Tanin
+console.log(greeting1(name)); //Hello Tanin
+console.log(greeting2(name)); //Hello Tanin
 
 // ---- Practices 01
 
@@ -43,25 +43,25 @@ getCharacterInfo = (message) => {
   };
 };
 
-console.log(getCharacterInfo('Java Script'));
-console.log(getCharacterInfo('Hello World'));
+console.log(getCharacterInfo('Java Script')); //{length: 11, firstCharacters: 'J', lastCharacters: 't'}
+console.log(getCharacterInfo('Hello World')); //{length: 11, firstCharacters: 'H', lastCharacters: 'd'}
 
 // ---- Practices 02
 
 checkWord = (message, check) => message.includes(check);
 
-console.log(checkWord('I love JavaScript', 'JavaScript'));
-console.log(checkWord('I love JavaScript', 'Python'));
+console.log(checkWord('I love JavaScript', 'JavaScript')); //true
+console.log(checkWord('I love JavaScript', 'Python')); //false
 
 const text = 'Operator';
-console.log(text[0]);
-console.log(text[text.length - 1]);
+console.log(text[0]); //O
+console.log(text[text.length - 1]); //r
 
 // ---- Practices 03
 replaceWord = (text, text_find, text_replace) =>
   text.replace(text_find, text_replace);
 
-console.log(replaceWord('I love JavaScript', 'JavaScript', 'TypeScript'));
+console.log(replaceWord('I love JavaScript', 'JavaScript', 'TypeScript')); //I love TypeScript
 
 // ---- Practices 04
 function capitalizeFirstLetter(text) {
@@ -70,13 +70,25 @@ function capitalizeFirstLetter(text) {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
-console.log(capitalizeFirstLetter('i love javascript python and java'));
+console.log(capitalizeFirstLetter('i love javascript python and java')); //I Love Javascript Python And Java
 
 // ---- Practices 05
 checkDataType = (data) => typeof data;
 
-console.log(checkDataType('Hello'));
-console.log(checkDataType(42));
-console.log(checkDataType(true));
-console.log(checkDataType(null));
-console.log(checkDataType(() => {}));
+console.log(checkDataType('Hello')); //string
+console.log(checkDataType(42)); //number
+console.log(checkDataType(true)); //boolean
+console.log(checkDataType(null)); //object
+console.log(checkDataType(() => {})); // function
+
+// ---- Practices 06
+checkCondition = (data) => data?'Truthy':'Falsy'
+
+console.log(checkCondition(1)); //true
+console.log(checkCondition(0)); //false
+console.log(checkCondition(null)); //false
+console.log(checkCondition(undefined)); //false
+console.log(checkCondition("Hello")); //true
+console.log(checkCondition([])); //true
+console.log(checkCondition({})); //true
+
