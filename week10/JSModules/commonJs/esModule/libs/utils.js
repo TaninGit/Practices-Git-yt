@@ -10,7 +10,8 @@
 function echo(msg = 'Hello, World') {
   return msg
 }
-function x() {
-    return "Good Bye I'm Ironman."
+function x(someone='guest') {
+    return `Hi, ${someone}`
 }
-export {echo,x as default}
+const nums = [1,3,5,7]
+export {echo,x as greeting, nums}
