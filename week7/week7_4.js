@@ -22,10 +22,16 @@ const students = [
       absent: false
     }
   ]
-
-function findAbsentId(){ //return array of absent id
-
+// practices #1
+function findAbsentId(student){ //return array of absent id
+  return student.filter( x => x.absent === true ).map(student => student.id)
 }
-function isAllAbsent(){ //return boolean true or false
-
+// practices #2
+function isAllAbsent(student){ //return boolean true or false
+  return student.every( x => x.absent === true)
 }
+
+console.log(findAbsentId(students))
+
+console.log(isAllAbsent(students))
+

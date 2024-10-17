@@ -1,11 +1,15 @@
-function removeFalsyValues(arr) {
-    const result_arr = []
-    for(const item in arr){
-        if(arr[item] !== "" && arr[item] !== 0 && arr[item] !== false  && arr[item] !== null && arr[item] !== undefined){
-            result_arr.push(arr[item])
-        }
-    }
-    return console.log(result_arr)
+// function removeFalsyValues(arr) {
+//     const result_arr = []
+//     for(const item in arr){
+//         if(arr[item] !== "" && arr[item] !== 0 && arr[item] !== false  && arr[item] !== null && arr[item] !== undefined){
+//             result_arr.push(arr[item])
+//         }
+//     }
+//     return console.log(result_arr)
+// }
+
+function removeFalsyValues(arr){
+    return arr.filter((e)=>e)
 }
 
 removeFalsyValues([0,1,false,2,"",3])

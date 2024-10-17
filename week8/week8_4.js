@@ -1,0 +1,5 @@
+const words = ['cat', 'ant', 'dog', 'bird', 'pig', 'bear']
+console.log(words.slice(3)) //[ 'bird', 'pig', 'bear']
+console.log(words.slice(2, 3)) //[ 'dog']
+console.log(words.slice(1)) //['ant', 'dog', 'bird', 'pig', 'bear']
+console.log(words.slice(-3)) //['bird', 'pig', 'bear']
