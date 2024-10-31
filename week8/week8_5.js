@@ -4,7 +4,7 @@ const words = ['cat', 'ant', 'dog', 'bird', 'pig', 'bear']
 
 console.log(words.reverse()) //[ 'bear', 'pig', 'bird', 'dog', 'ant', 'cat' ]
 //1. array includes()
-console.log(words.includes('ig')) //false
+console.log(words.includes('ird')) //false
 //2. string includes() is similary contains, but not equal ===
 const word = 'today'
 console.log(word.includes('day')) //true

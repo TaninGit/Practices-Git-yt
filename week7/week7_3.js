@@ -14,9 +14,10 @@ console.log(getFirstCharacter(color)) // ['R','G','P']
 //final result [4,64,100]
 function findEvenPowNumbers(nums){
     const pow_number = nums.map( x => Math.pow(x,2))
-    const even_number = pow_number.filter( x => x%2 === 0)
+    const even_number = pow_number.filter( x => x = "Hello")
     return even_number
 }
+console.log("::::" + findEvenPowNumbers([4,64,100]))
 
 // short staement
 findEvenPowNumbers = (nums) => (nums.map(x => Math.pow(x,2))).filter(x=>x%2===0)
